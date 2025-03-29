@@ -670,6 +670,10 @@ strong {
         height: 40px;
         max-width: 120px;
     }
+
+    .faq-content{
+        margin-right: 0 !important;
+    }
 }
 
 
@@ -848,6 +852,8 @@ strong {
     font-weight: bold;
     display: flex;
     align-items: center;
+    text-align: left;
+
 }
 
 .faq-question::before {
@@ -856,10 +862,12 @@ strong {
     margin-right: 10px;
     transition: transform 0.3s;
     color: orange;
+
 }
 
 .faq-question.active::before {
-    transform: rotate(90deg);
+    transform: rotate(90deg); 
+
     /* Down arrow */
 }
 
