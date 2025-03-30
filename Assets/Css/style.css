@@ -142,6 +142,16 @@ strong {
 }
 
 @media (max-width: 768px) {
+    p {
+        text-align: justify;
+        hyphens: auto; /* Automatically breaks long words */
+        line-height: 1.6; /* Increases readability */
+        word-spacing: 0.05em; /* Fine-tunes word spacing */
+        /* letter-spacing: 0.02em;  */
+    }
+    
+
+
     .topbar {
         flex-direction: column;
         align-items: center;
@@ -162,6 +172,57 @@ strong {
     padding: 50px 0;
     background-color: black;
 }
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+@media (max-width: 991px) {
+    .carousel-item {
+    
+        height: 500px !important;
+    }
+
+}
+@media (max-width: 768px) {
+    .carousel-item {
+
+        height: 500px !important;
+    }
+
+    .carousel-item .container {
+        height: auto;
+    }
+
+    .carousel-item img {
+        max-width: 50% !important;
+        height: auto;
+        /* Keeps images proportional */
+    }
+
+    .form-slide-1 img {
+        width: 300px !important;
+        height: 350px !important;
+    }
+
+    .form-slide-2 img {
+        width: 300px !important;
+        height: 200px !important;
+    }
+
+    .form-slide-3 img {
+        width: 300px !important;
+        height: 200px !important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .form-slide-1 {
+        display: none;
+    }
+}
+
 
 .carousel-item .container {
 
@@ -240,13 +301,8 @@ strong {
 
 
 
-
-/* .image-container {
-    width: 400px;
-    height: 400px;
-} */
-
 .image-container img {
+    padding-left: 40px;
     max-height: 400px;
     object-fit: contain;
 }
@@ -477,7 +533,7 @@ strong {
     }
 
     .content {
-        gap: 15px;
+        /* gap: 15px; */
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -671,7 +727,7 @@ strong {
         max-width: 120px;
     }
 
-    .faq-content{
+    .faq-content {
         margin-right: 0 !important;
     }
 }
@@ -866,7 +922,7 @@ strong {
 }
 
 .faq-question.active::before {
-    transform: rotate(90deg); 
+    transform: rotate(90deg);
 
     /* Down arrow */
 }
